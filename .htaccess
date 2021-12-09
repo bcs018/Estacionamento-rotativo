@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{HTTP_HOST} ^localhost/Estacionamento-rotativo$ [NC,OR] RewriteCond %{HTTP_HOST} ^localhost/Estacionamento-rotativo$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /home/$1 [L]
