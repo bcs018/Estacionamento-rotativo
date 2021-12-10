@@ -1,6 +1,8 @@
 <?php
 namespace src;
 
+define('_BASE_ASS_','assets/');
+
 class Config {
     const BASE_DIR = '/mvc/public';
 
