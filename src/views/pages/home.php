@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 	<title>Login | Estacionamento rotativo</title>
 	<meta charset="UTF-8">
