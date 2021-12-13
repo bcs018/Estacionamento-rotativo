@@ -2,6 +2,7 @@
 namespace src;
 
 define('_BASE_ASS_','assets/');
+define('_BASE_END_','Estacionamento-rotativo/');
 
 class Config {
     const BASE_DIR = '/mvc/public';

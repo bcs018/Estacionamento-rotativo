@@ -26,15 +26,15 @@
 				<span class="login100-form-title p-b-41">
 					Login no sistema
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5">
+				<form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="/<?php echo _BASE_END_ ?>login">
 
 					<div class="wrap-input100 validate-input" data-validate = "Informe o usuário">
-						<input class="input100" type="text" name="username" placeholder="Usuário">
+						<input class="input100" type="text" name="usuario" placeholder="Usuário">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Informe a senha">
-						<input class="input100" type="password" name="pass" placeholder="Senha">
+						<input class="input100" type="password" name="senha" placeholder="Senha">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
@@ -43,7 +43,12 @@
 							Login
 						</button>
 					</div>
-
+					<?php 
+						if(isset($_SESSION['message'])){
+							echo '<br>'.$_SESSION['message'];
+							unset($_SESSION['message']);
+						}
+					?>
 				</form>
 			</div>
 		</div>
