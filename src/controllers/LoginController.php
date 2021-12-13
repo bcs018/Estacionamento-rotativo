@@ -11,8 +11,9 @@ class LoginController extends Controller {
         $senha   = addslashes($_POST['senha']);
 
         $l = new Login;
+
         if($l->verificaLogin($usuario, $senha)){
-            header("Location: /painel");
+            header("Location: /"._BASE_END_."painel");
             exit;
         }
 

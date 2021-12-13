@@ -8,7 +8,7 @@ class Login extends Model {
         $sql = "SELECT * FROM usuarios WHERE login = ? AND senha = ?";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(1, $usuario);
-        $sql->bindValue(2, $senha);
+        $sql->bindValue(2, md5($senha));
         $sql->execute();
 
         if($sql->rowCount() > 0){

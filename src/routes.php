@@ -6,6 +6,8 @@ $router = new Router();
 $router->get('/', 'HomeController@index');
 $router->post('/login', 'LoginController@login');
 
+$router->get('/painel', 'PainelController@index');
+
 
 $router->get('/sobre/{nome}', 'HomeController@sobreP');
 $router->get('/sobre', 'HomeController@sobre');
