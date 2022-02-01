@@ -7,6 +7,12 @@ use \src\models\Login;
 class PainelController extends Controller {
 
     public function index(){
+        $l = new Login;
+
+        if(!$l->verificarLogado()){
+            header("Location: /"._BASE_END_);
+        }
+
         $this->render('painel/home');
     }
 

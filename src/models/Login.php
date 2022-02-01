@@ -12,6 +12,8 @@ class Login extends Model {
         $sql->execute();
 
         if($sql->rowCount() > 0){
+            $_SESSION['logado'] = true;
+
             return true;
         }
         
@@ -21,5 +23,21 @@ class Login extends Model {
 
         return false;
     }    
+
+    public function sair(){
+        unset($_SESSION['logado']);
+    }
+
+    public function verificarLogado(){
+        if(!isset($_SESSION['logado']) || !$_SESSION['logado']){
+            $_SESSION['message'] = '<div class="alert alert-danger" role="alert">
+                                        Você não pode acessar uma área restrita, faça login para continuar!
+                                    </div>';
+
+            return false;
+        }
+
+        return true;
+    }
 
 }

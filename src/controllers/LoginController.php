@@ -21,4 +21,12 @@ class LoginController extends Controller {
         exit;
     }
 
+    public function sair(){
+        $l = new Login;
+
+        $l->sair();
+
+        header("Location: /"._BASE_END_);
+    }
+
 }
