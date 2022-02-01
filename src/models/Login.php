@@ -12,7 +12,10 @@ class Login extends Model {
         $sql->execute();
 
         if($sql->rowCount() > 0){
-            $_SESSION['logado'] = true;
+            $dados = $sql->fetch();
+
+            $_SESSION['logado']            = true;
+            $_SESSION['dados_usu']['nome'] = $dados['nome'];
 
             return true;
         }
@@ -26,6 +29,7 @@ class Login extends Model {
 
     public function sair(){
         unset($_SESSION['logado']);
+        unset($_SESSION['dados_usu']);
     }
 
     public function verificarLogado(){
