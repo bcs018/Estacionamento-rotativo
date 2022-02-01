@@ -1,3 +1,4 @@
+</div>
 <footer class="main-footer">
   <strong>Copyright &copy; <?= date('Y'); ?> - EstacionaCar - </strong> 
     Todos direitos reservados
