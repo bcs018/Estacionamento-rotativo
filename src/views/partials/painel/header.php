@@ -12,6 +12,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet"
@@ -27,7 +29,9 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/summernote/summernote-bs4.min.css">    
+
+    <link rel="stylesheet" href="<?php echo _BASE_ASS_ ?>painel/toastr/css/toastr.css">    
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -46,7 +50,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="painel" class="nav-link">Home</a>
                 </li>
             </ul>
 

@@ -6,6 +6,10 @@
             <div class="col-sm-6">
                 <h1>Cadastro de Usuário</h1>
             </div>
+            <div class="md-12">
+                <br>
+                <center><p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b></p></center>
+            </div>
         </div>
     </div>
 </section>
@@ -17,28 +21,27 @@
                 <h3 class="card-title">Informe os dados</h3>
             </div>
 
-            <form>
+            <form id="cad_usu">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira seu Nome">
+                        <p style="color: #fc270f;display:inline;"><b>*</b></p>
+                        <label for="nome">&nbsp; Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira o Nome">
                     </div>
                     <div class="form-group">
-                        <label for="login">Login</label>
-                        <input type="text" class="form-control" name="nome" id="login" placeholder="Insira seu Login">
+                        <p style="color: #fc270f;display:inline;"><b>*</b></p>
+                        <label for="login">&nbsp; Login</label>
+                        <input type="text" class="form-control" name="nome" id="login" placeholder="Insira o Login">
                     </div>
                     <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input type="password" class="form-control" name="nome" id="senha" placeholder="Insira sua Senha">
+                        <p style="color: #fc270f;display:inline;"><b>*</b></p>
+                        <label for="senha">&nbsp; Senha</label>
+                        <input type="password" class="form-control" name="nome" id="senha" placeholder="Insira a Senha">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">Foto Perfil</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Clique para escolher</label>
-                            </div>
-                        </div>
+
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Foto Perfil</label>
+                        <input class="form-control" type="file" id="url_img" name="url_img">
                     </div>
                 </div>
 

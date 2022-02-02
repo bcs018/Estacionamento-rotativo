@@ -21,8 +21,6 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo _BASE_ASS_ ?>painel/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
 <script src="<?php echo _BASE_ASS_ ?>painel/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
@@ -35,8 +33,6 @@
 <!-- daterangepicker -->
 <script src="<?php echo _BASE_ASS_ ?>painel/moment/moment.min.js"></script>
 <script src="<?php echo _BASE_ASS_ ?>painel/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="<?php echo _BASE_ASS_ ?>painel/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
 <script src="<?php echo _BASE_ASS_ ?>painel/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
@@ -47,5 +43,13 @@
 <script src="<?php echo _BASE_ASS_ ?>painel/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?php echo _BASE_ASS_ ?>painel/dist/js/pages/dashboard.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?php echo _BASE_ASS_ ?>painel/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="<?php echo _BASE_ASS_ ?>painel/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<script src="<?php echo _BASE_ASS_ ?>painel/js/frmCadastroUsuario.js"></script>
+
+<script src="<?php echo _BASE_ASS_ ?>painel/toastr/js/toastr.min.js"></script>
 </body>
 </html>
