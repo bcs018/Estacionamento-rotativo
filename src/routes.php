@@ -9,6 +9,7 @@ $router->get('/sair', 'LoginController@sair');
 
 $router->get('/painel', 'PainelController@index');
 $router->get('/cadastrar-usuario', 'PainelController@addUser');
+$router->post('/cadastrar-action', 'UsuarioController@cadastrarUsuario');
 
 
 $router->get('/sobre/{nome}', 'HomeController@sobreP');
