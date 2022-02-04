@@ -9,8 +9,8 @@ class UsuarioController extends Controller {
         $nome = addslashes($_POST['nome']);
         $login = addslashes($_POST['login']);
         $senha = addslashes($_POST['senha']);
-        $foto = $_FILES;
+        //$foto = $_FILES;
 
-        print_r($foto);
+        print_r($_POST);
     }
 }

@@ -21,7 +21,7 @@
                 <h3 class="card-title">Informe os dados</h3>
             </div>
 
-            <form id="cad_usu">
+            <form id="cad_usu" enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
                         <p style="color: #fc270f;display:inline;"><b>*</b></p>
@@ -31,12 +31,12 @@
                     <div class="form-group">
                         <p style="color: #fc270f;display:inline;"><b>*</b></p>
                         <label for="login">&nbsp; Login</label>
-                        <input type="text" class="form-control" name="nome" id="login" placeholder="Insira o Login">
+                        <input type="text" class="form-control" name="login" id="login" placeholder="Insira o Login">
                     </div>
                     <div class="form-group">
                         <p style="color: #fc270f;display:inline;"><b>*</b></p>
                         <label for="senha">&nbsp; Senha</label>
-                        <input type="password" class="form-control" name="nome" id="senha" placeholder="Insira a Senha">
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Insira a Senha">
                     </div>
 
                     <div class="mb-3">
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" id="btn_enviar" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
         </div>

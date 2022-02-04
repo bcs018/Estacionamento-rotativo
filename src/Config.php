@@ -1,7 +1,7 @@
 <?php
 namespace src;
 
-define('_BASE_ASS_','assets/');
+define('_BASE_ASS_','http://localhost/Estacionamento-rotativo/assets/');
 define('_BASE_END_','Estacionamento-rotativo/');
 
 class Config {

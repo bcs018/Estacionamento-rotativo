@@ -1,28 +1,27 @@
 $(function(){
 
-    $('#cad_usu').on('submit', function(e){
+    $('#btn_enviar').on('click', function(e){
         e.preventDefault();
-        img = new FormData();
-        img.append('imagem','file', $('#url_img'));
+        var form_data = new FormData();
 
-        nome    = $('#nome').val();
-        login   = $('#login').val();
-        senha   = $('#senha').val();
+        form_data.append('img', $('input[name=url_img]').prop('files')[0]);
+        form_data.append('nome',$('#nome').val());
+        form_data.append('login',$('#login').val());
+        form_data.append('senha',$('#senha').val());
 
+        toastr.error('Cheguei aqui meu chapa')
         // if(nome == '' || login == '' || senha == ''){
         //     toastr.error('Campo Nome, Login ou Senha não preenchidos')
         //     return;
         // }
 
         $.ajax({
-            url: '/cadastrar-action',
+            url: '/painel/cadastrar-action',
             type: 'POST',
-            data: 
-                img
-                // nome:nome,
-                // login:login,
-                // senha:senha
-            ,
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
             dataType: 'JSON',
             success:function(r){
                 if(r.retorno){
