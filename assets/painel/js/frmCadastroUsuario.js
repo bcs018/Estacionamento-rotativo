@@ -9,14 +9,14 @@ $(function(){
         form_data.append('login',$('#login').val());
         form_data.append('senha',$('#senha').val());
 
-        toastr.error('Cheguei aqui meu chapa')
+        toastr.error(BASE_DIR)
         // if(nome == '' || login == '' || senha == ''){
         //     toastr.error('Campo Nome, Login ou Senha não preenchidos')
         //     return;
         // }
 
         $.ajax({
-            url: '/painel/cadastrar-action',
+            url: BASE_DIR+'/painel/cadastrar-action',
             type: 'POST',
             cache: false,
             contentType: false,

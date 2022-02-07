@@ -12,5 +12,6 @@ class UsuarioController extends Controller {
         //$foto = $_FILES;
 
         print_r($_POST);
+        print_r($_FILES);
     }
 }

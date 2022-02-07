@@ -48,6 +48,8 @@
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?php echo _BASE_ASS_ ?>painel/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 
+<script src="<?php echo _BASE_ASS_ ?>painel/js/script.js"></script>
+
 <script src="<?php echo _BASE_ASS_ ?>painel/js/frmCadastroUsuario.js"></script>
 
 <script src="<?php echo _BASE_ASS_ ?>painel/toastr/js/toastr.min.js"></script>
