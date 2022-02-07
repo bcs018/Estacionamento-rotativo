@@ -2,16 +2,17 @@
 namespace src\controllers;
 
 use \core\Controller;
-use \src\models\Login;
+use \src\models\Usuario;
 
 class UsuarioController extends Controller {
     public function cadastrarUsuario(){
         $nome = addslashes($_POST['nome']);
         $login = addslashes($_POST['login']);
         $senha = addslashes($_POST['senha']);
-        //$foto = $_FILES;
 
-        print_r($_POST);
-        print_r($_FILES);
+        $u = new Usuario;
+        echo json_encode($u->inserir($nome, $login, $senha, $_FILES));
+
+        exit;
     }
 }

@@ -9,7 +9,6 @@ $(function(){
         form_data.append('login',$('#login').val());
         form_data.append('senha',$('#senha').val());
 
-        toastr.error(BASE_DIR)
         // if(nome == '' || login == '' || senha == ''){
         //     toastr.error('Campo Nome, Login ou Senha não preenchidos')
         //     return;
@@ -24,10 +23,15 @@ $(function(){
             data: form_data,
             dataType: 'JSON',
             success:function(r){
-                if(r.retorno){
-                    toastr.sucess('Usuário cadastrado com sucesso');
+                if(r.retorno == true){
+                    toastr.success('Usuário cadastrado com sucesso');
+
+                    $('#nome').val('');
+                    $('#login').val('');
+                    $('#senha').val('');
+                    $('input[name=url_img]').val('');
                 }else{
-                    toastr.error(r.msg_error);
+                    toastr.error(r.cod_error +' - ' + r.msg_error);
                 }
             }
         })
