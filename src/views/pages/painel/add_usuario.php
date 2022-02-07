@@ -1,4 +1,4 @@
-<?php $render('painel/header'); ?>
+<?php $render('painel/header', ['title' => 'Cadastrar Usuário']); ?>
 
 <section class="content-header">
     <div class="container-fluid">

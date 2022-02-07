@@ -1,4 +1,4 @@
-<?php $render('painel/header'); ?>
+<?php $render('painel/header', ['title' => 'Home']); ?>
 
 <div class="content-header">
   <div class="container-fluid">
