@@ -6,9 +6,17 @@
             <div class="col-sm-6">
                 <h1>Cadastro de Usuário</h1>
             </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="sair" style="color:red;"><b>Sair</b></a></li>
+                </ol>
+            </div><!-- /.col -->
+
             <div class="md-12">
                 <br>
-                <center><p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b></p></center>
+                <center>
+                    <p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b></p>
+                </center>
             </div>
         </div>
     </div>
@@ -36,7 +44,8 @@
                     <div class="form-group">
                         <p style="color: #fc270f;display:inline;"><b>*</b></p>
                         <label for="senha">&nbsp; Senha</label>
-                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Insira a Senha">
+                        <input type="password" class="form-control" name="senha" id="senha"
+                            placeholder="Insira a Senha">
                     </div>
 
                     <div class="mb-3">

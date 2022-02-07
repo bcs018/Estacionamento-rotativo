@@ -126,7 +126,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?= _BASE_ASS_ ?>img/semfoto.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?php echo ($_SESSION['dados_usu']['img']==null)? _BASE_ASS_ ."img/semfoto.png": _BASE_ASS_.'painel/img_user/'.$_SESSION['dados_usu']['img']; ?>" class="img-circle elevation-2" alt="Imagem Usuário">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block"><?= $_SESSION['dados_usu']['nome']; ?></a>

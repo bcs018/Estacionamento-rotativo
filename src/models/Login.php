@@ -16,6 +16,7 @@ class Login extends Model {
 
             $_SESSION['logado']            = true;
             $_SESSION['dados_usu']['nome'] = $dados['nome'];
+            $_SESSION['dados_usu']['img']  = $dados['url_foto'];
 
             return true;
         }
