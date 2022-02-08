@@ -38,13 +38,13 @@
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                            <label for="login">&nbsp; E-mail</label>
+                            <label for="email">&nbsp; E-mail</label>
                             <input type="text" class="form-control" name="email" id="email" placeholder="Insira o E-mail">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                            <label for="senha">&nbsp; Telefone</label>
-                            <input type="password" class="form-control" name="telefone" id="telefone" placeholder="Insira o Telefone">
+                            <label for="telefone">&nbsp; Telefone</label>
+                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Insira o Telefone">
                         </div>
                     </div>
             </div>
@@ -59,18 +59,18 @@
                     <div class="card-body">
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                            <label for="nome">&nbsp; Modelo</label>
+                            <label for="modelo">&nbsp; Modelo</label>
                             <input type="text" class="form-control" name="modelo" id="modelo" placeholder="Insira o Modelo">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                            <label for="login">&nbsp; Marca</label>
+                            <label for="marca">&nbsp; Marca</label>
                             <input type="text" class="form-control" name="marca" id="marca" placeholder="Insira a Marca">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                            <label for="senha">&nbsp; Placa</label>
-                            <input type="password" class="form-control" name="placa" id="placa" placeholder="Insira a Placa">
+                            <label for="placa">&nbsp; Placa</label>
+                            <input type="text" class="form-control" name="placa" id="placa" placeholder="Insira a Placa">
                         </div>
 
                     </div>
@@ -84,3 +84,10 @@
 </section>
 
 <?php $render('painel/footer'); ?>
+
+<script>
+
+$('#telefone').mask('(00) 00000-0000');
+$('#placa').mask('AAA-ABAA');
+
+</script>

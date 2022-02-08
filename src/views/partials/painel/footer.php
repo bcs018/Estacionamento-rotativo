@@ -49,6 +49,7 @@
 <script src="<?php echo _BASE_ASS_ ?>painel/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 
 <script src="<?php echo _BASE_ASS_ ?>painel/js/script.js"></script>
+<script src="<?php echo _BASE_ASS_ ?>js/jquery.mask.min.js"></script>
 
 <script src="<?php echo _BASE_ASS_ ?>painel/js/frmCadastroUsuario.js"></script>
 
