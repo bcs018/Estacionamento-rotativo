@@ -1,8 +1,16 @@
 <?php
 namespace src;
 
-define('_BASE_ASS_','http://localhost/Estacionamento-rotativo/assets/');
-define('_BASE_END_','http://localhost/Estacionamento-rotativo/');
+$enviroment = 'local';
+//$enviroment = 'production';
+
+if($enviroment == 'local'){
+    define('_BASE_ASS_','http://localhost/Estacionamento-rotativo/assets/');
+    define('_BASE_END_','http://localhost/Estacionamento-rotativo/');
+}else{
+    define('_BASE_ASS_','');
+    define('_BASE_END_','');
+}
 
 class Config {
     const BASE_DIR = '/mvc/public';
