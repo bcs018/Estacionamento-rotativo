@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Painel de controle | <?= $title; ?></title>
+    <title>Painel de controle | <?= $title ?></title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -48,7 +48,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="painel" class="nav-link">Home</a>
+                    <a href="<?= _BASE_END_ ?>painel" class="nav-link">Home</a>
                 </li>
             </ul>
 
@@ -167,7 +167,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="painel/cadastrar-usuario" class="nav-link">
+                            <a href="<?= _BASE_END_ ?>painel/cadastrar-usuario" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p> Cadastrar usuário</p>
                             </a>
