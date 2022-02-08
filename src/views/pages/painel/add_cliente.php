@@ -88,6 +88,12 @@
 <script>
 
 $('#telefone').mask('(00) 00000-0000');
-$('#placa').mask('AAA-ABAA');
+$('#placa').mask('AAA-BCBB', {
+    'translation': {
+        'A': {pattern: /[A-Za-z]/},
+        'B': {pattern: /[0-9]/},
+        'C': {pattern: /[A-Za-z0-9]/}
+    }
+});
 
 </script>
