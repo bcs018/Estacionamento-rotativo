@@ -140,7 +140,7 @@
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-file-invoice-dollar"></i>
                                 <p>
-                                    Mensalidades
+                                    Mensalistas
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -148,13 +148,25 @@
                                 <li class="nav-item">
                                     <a href="./index.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>A Receber</p>
+                                        <p>Mensalidades a Receber</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index2.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Inadimplentes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= _BASE_END_ ?>painel/cadastrar-cliente" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cadastrar cliente</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index2.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Configurações</p>
                                     </a>
                                 </li>
                             </ul>
@@ -164,6 +176,12 @@
                             <a href="iframe.html" class="nav-link">
                             <i class="nav-icon fas fa-car"></i>
                             <p> Veiculos estacionados</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= _BASE_END_ ?>painel/novo-veiculo" class="nav-link">
+                            <i class="nav-icon fas fa-plus"></i>
+                            <p> Novo veiculo</p>
                             </a>
                         </li>
                         <li class="nav-item">
