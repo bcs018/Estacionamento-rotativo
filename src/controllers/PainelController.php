@@ -10,7 +10,7 @@ class PainelController extends Controller {
         $l = new Login;
 
         if(!$l->verificarLogado()){
-            header("Location: /"._BASE_END_);
+            header("Location: "._BASE_END_);
         }
 
         $this->render('painel/home');
@@ -20,7 +20,7 @@ class PainelController extends Controller {
         $l = new Login;
 
         if(!$l->verificarLogado()){
-            header("Location: /"._BASE_END_);
+            header("Location: "._BASE_END_);
         }
 
         $this->render('painel/add_usuario');

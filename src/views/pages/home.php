@@ -26,7 +26,7 @@
 				<span class="login100-form-title p-b-41">
 					Login no sistema
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="/<?php echo _BASE_END_ ?>login">
+				<form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="<?php echo _BASE_END_ ?>login">
 
 					<div class="wrap-input100 validate-input" data-validate = "Informe o usuário">
 						<input class="input100" type="text" name="usuario" placeholder="Usuário">

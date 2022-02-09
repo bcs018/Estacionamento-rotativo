@@ -39,12 +39,12 @@
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="email">&nbsp; E-mail</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Insira o E-mail">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Insira o E-mail">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="telefone">&nbsp; Telefone</label>
-                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Insira o Telefone">
+                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="(99) 99999-9999">
                         </div>
                     </div>
             </div>
@@ -70,7 +70,7 @@
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="placa">&nbsp; Placa</label>
-                            <input type="text" class="form-control" name="placa" id="placa" placeholder="Insira a Placa">
+                            <input type="text" class="form-control" name="placa" id="placa" placeholder="XXX-XXXX" style="text-transform: uppercase;">
                         </div>
 
                     </div>
@@ -86,7 +86,6 @@
 <?php $render('painel/footer'); ?>
 
 <script>
-
 $('#telefone').mask('(00) 00000-0000');
 $('#placa').mask('AAA-BCBB', {
     'translation': {
@@ -95,5 +94,4 @@ $('#placa').mask('AAA-BCBB', {
         'C': {pattern: /[A-Za-z0-9]/}
     }
 });
-
 </script>

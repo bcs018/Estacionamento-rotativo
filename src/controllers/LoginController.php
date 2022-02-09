@@ -13,11 +13,11 @@ class LoginController extends Controller {
         $l = new Login;
 
         if($l->verificaLogin($usuario, $senha)){
-            header("Location: /"._BASE_END_."painel");
+            header("Location: "._BASE_END_."painel");
             exit;
         }
 
-        header("Location: /"._BASE_END_);
+        header("Location: "._BASE_END_);
         exit;
     }
 
@@ -26,7 +26,7 @@ class LoginController extends Controller {
 
         $l->sair();
 
-        header("Location: /"._BASE_END_);
+        header("Location: "._BASE_END_);
     }
 
 }
