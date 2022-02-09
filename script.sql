@@ -48,13 +48,21 @@ create table mensalidades(
 
 create table veiculos(
 	veiculo_id int not null auto_increment,
-	cliente_id int not null,
     modelo varchar(100) not null,
     marca varchar(100) not null,
     tp_veiculo int not null,
     
-	primary key(veiculo_id),
-    foreign key(cliente_id) references clientes(cliente_id)
+	primary key(veiculo_id)
+)default charset utf8;
+
+create table cli_vei(
+    clivei_id int not null auto_increment,
+    veiculo_id int not null,
+    cliente_id int not null,
+
+    primary key (clivei_id),
+    foreign key (veiculo_id) references veiculos (veiculo_id),
+    foreign key (cliente_id) references clientes (cliente_id)
 )default charset utf8;
 
 create table ocorrencias(
