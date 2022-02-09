@@ -23,7 +23,7 @@
 </section>
 
 <section class="content">
-    <form id="cad_usu" >
+    <form id="cad_cliente" >
         <div class="md-11">
             <div class="card card-secondary">
                 <div class="card-header">
@@ -63,7 +63,6 @@
                             <input type="text" class="form-control" name="modelo" id="modelo" placeholder="Insira o Modelo">
                         </div>
                         <div class="form-group">
-                            <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="marca">&nbsp; Marca</label>
                             <input type="text" class="form-control" name="marca" id="marca" placeholder="Insira a Marca">
                         </div>
