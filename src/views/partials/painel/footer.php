@@ -51,7 +51,8 @@
 <script src="<?php echo _BASE_ASS_ ?>painel/js/script.js"></script>
 <script src="<?php echo _BASE_ASS_ ?>js/jquery.mask.min.js"></script>
 
-<script src="<?php echo _BASE_ASS_ ?>painel/js/frmCadastroUsuario.js"></script>
+<script src="<?php echo _BASE_ASS_ ?>painel/js/fmrCadastroUsuario.js"></script>
+<script src="<?php echo _BASE_ASS_ ?>painel/js/fmrCadastroCliente.js"></script>
 
 <script src="<?php echo _BASE_ASS_ ?>painel/toastr/js/toastr.min.js"></script>
 </body>

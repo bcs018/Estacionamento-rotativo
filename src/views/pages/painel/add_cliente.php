@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="card-footer">
-                        <button type="submit" id="btn_enviar" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" id="btn_enviar_c" class="btn btn-primary">Cadastrar</button>
                     </div>
             </div>
         </div>

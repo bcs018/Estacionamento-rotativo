@@ -24,7 +24,7 @@ class ClienteController extends Controller {
         $marca    = addslashes($_POST['marca']);
         $placa    = addslashes($_POST['placa']);
 
-        $c = new CLiente;
+        $c = new Cliente;
 
         echo json_encode($c->inserir($nome, $email, $telefone, $modelo, $marca, $placa));
 
