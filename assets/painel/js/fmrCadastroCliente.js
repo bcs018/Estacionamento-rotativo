@@ -1,14 +1,14 @@
 $(function(){
     $('#btn_enviar_c').on('click', function(e){
         e.preventDefault();
-        var form_data = FormData();
+        var form_data = new FormData();
         
-        nome     = $('#nome').val();
-        email    = $('#email').val();
-        telefone = $('#telefone').val();
-        modelo   = $('#modelo').val();
-        marca    = $('#marca').val();
-        placa    = $('#placa').val();
+        nome     = $('#nome_c').val();
+        email    = $('#email_c').val();
+        telefone = $('#telefone_c').val();
+        modelo   = $('#modelo_c').val();
+        marca    = $('#marca_c').val();
+        placa    = $('#placa_c').val();
 
         if($nome == '' || $email == '' || $telefone == '' || $modelo == '' || $placa == ''){
             toastr.error('Campo Nome, E-mail, Telefone, Modelo ou Placa não preenchidos');

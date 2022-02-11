@@ -34,17 +34,17 @@
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="nome">&nbsp; Nome</label>
-                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira o Nome">
+                            <input type="text" class="form-control" name="nome" id="nome_c" placeholder="Insira o Nome">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="email">&nbsp; E-mail</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Insira o E-mail">
+                            <input type="email" class="form-control" name="email" id="email_c" placeholder="Insira o E-mail">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="telefone">&nbsp; Telefone</label>
-                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                            <input type="text" class="form-control" name="telefone" id="telefone_c" placeholder="(99) 99999-9999">
                         </div>
                     </div>
             </div>
@@ -60,16 +60,16 @@
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="modelo">&nbsp; Modelo</label>
-                            <input type="text" class="form-control" name="modelo" id="modelo" placeholder="Insira o Modelo">
+                            <input type="text" class="form-control" name="modelo" id="modelo_c" placeholder="Insira o Modelo">
                         </div>
                         <div class="form-group">
                             <label for="marca">&nbsp; Marca</label>
-                            <input type="text" class="form-control" name="marca" id="marca" placeholder="Insira a Marca">
+                            <input type="text" class="form-control" name="marca" id="marca_c" placeholder="Insira a Marca">
                         </div>
                         <div class="form-group">
                             <p style="color: #fc270f;display:inline;"><b>*</b></p>
                             <label for="placa">&nbsp; Placa</label>
-                            <input type="text" class="form-control" name="placa" id="placa" placeholder="XXX-XXXX" style="text-transform: uppercase;">
+                            <input type="text" class="form-control" name="placa" id="placa_c" placeholder="XXX-XXXX" style="text-transform: uppercase;">
                         </div>
 
                     </div>
