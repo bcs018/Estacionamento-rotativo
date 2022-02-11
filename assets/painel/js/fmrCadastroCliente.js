@@ -10,7 +10,7 @@ $(function(){
         marca    = $('#marca_c').val();
         placa    = $('#placa_c').val();
 
-        if($nome == '' || $email == '' || $telefone == '' || $modelo == '' || $placa == ''){
+        if(nome == '' || email == '' || telefone == '' || modelo == '' || placa == ''){
             toastr.error('Campo Nome, E-mail, Telefone, Modelo ou Placa não preenchidos');
 
             return;
