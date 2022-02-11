@@ -85,7 +85,7 @@
 <?php $render('painel/footer'); ?>
 
 <script>
-$('#telefone').mask('(00) 00000-0000');
+$('#telefone_c').mask('(00) 00000-0000');
 $('#placa_c').mask('AAA-BCBB', {
     'translation': {
         'A': {pattern: /[A-Za-z]/},
