@@ -3,12 +3,19 @@ $(function(){
         e.preventDefault();
         var form_data = new FormData();
         
-        nome     = $('#nome_c').val();
-        email    = $('#email_c').val();
-        telefone = $('#telefone_c').val();
-        modelo   = $('#modelo_c').val();
-        marca    = $('#marca_c').val();
-        placa    = $('#placa_c').val();
+        nome       = $('#nome_c').val();
+        email      = $('#email_c').val();
+        telefone   = $('#telefone_c').val();
+        modelo     = $('#modelo_c').val();
+        marca      = $('#marca_c').val();
+        placa      = $('#placa_c').val();
+        tp_veiculo = $("input[name='tpVeiculo']:checked").val();
+
+        if(tp_veiculo != '1' && tp_veiculo != '2'){
+            toastr.error('Veículo inválido');
+
+            return;
+        }
 
         if(nome == '' || email == '' || telefone == '' || modelo == '' || placa == ''){
             toastr.error('Campo Nome, E-mail, Telefone, Modelo ou Placa não preenchidos');
@@ -22,6 +29,7 @@ $(function(){
         form_data.append('modelo', modelo);
         form_data.append('marca', marca);
         form_data.append('placa', placa);
+        form_data.append('tp_veiculo', tp_veiculo);
 
         $.ajax({
             url: BASE_DIR+'/painel/cadastrar-cliente-action',

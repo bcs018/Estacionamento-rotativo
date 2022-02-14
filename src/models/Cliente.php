@@ -28,7 +28,17 @@ class Cliente extends Model {
         $sql->bindValue(2, $marca);
         $sql->bindValue(3, $tp_veiculo);
         $sql->bindValue(4, $placa);
+        $sql->execute();
 
-        echo 'ID do cliente é: '.$idCli;
+        $idVei = $this->db->lastInsertId();
+
+        $sql = 'INSERT INTO cli_vei (veiculo_id, cliente_id) VALUES (?,?)';
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(1, $idVei);
+        $sql->bindValue(2, $idCli);
+        $sql->execute();
+        
+
+
     }
 }

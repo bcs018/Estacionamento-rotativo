@@ -71,6 +71,22 @@
                             <label for="placa">&nbsp; Placa</label>
                             <input type="text" class="form-control" name="placa" id="placa_c" placeholder="XXX-XXXX" style="text-transform: uppercase;">
                         </div>
+                        <div class="form-group">
+                            <p style="color: #fc270f;display:inline;"><b>*</b></p>
+                            <label for="placa">&nbsp; Tipo do veículo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tpVeiculo" id="tpveiculoCarro" value="1" checked>
+                                <label class="form-check-label" for="tpveiculoCarro">
+                                    Carro
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tpVeiculo" id="tpveiculoMoto" value="2">
+                                <label class="form-check-label" for="tpveiculoMoto">
+                                    Moto
+                                </label>
+                            </div>
+                        </div>
 
                     </div>
 

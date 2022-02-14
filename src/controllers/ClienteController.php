@@ -17,16 +17,17 @@ class ClienteController extends Controller {
     }
 
     public function addClienteAction(){
-        $nome     = addslashes($_POST['nome']);
-        $email    = addslashes($_POST['email']);
-        $telefone = addslashes($_POST['telefone']);
-        $modelo   = addslashes($_POST['modelo']);
-        $marca    = addslashes($_POST['marca']);
-        $placa    = addslashes($_POST['placa']);
+        $nome       = addslashes($_POST['nome']);
+        $email      = addslashes($_POST['email']);
+        $telefone   = addslashes($_POST['telefone']);
+        $modelo     = addslashes($_POST['modelo']);
+        $marca      = addslashes($_POST['marca']);
+        $placa      = addslashes($_POST['placa']);
+        $tp_veiculo = addslashes($_POST['tp_veiculo']);
 
         $c = new Cliente;
 
-        echo json_encode($c->inserir($nome, $email, $telefone, $modelo, $marca, $placa));
+        echo json_encode($c->inserir($nome, $email, $telefone, $modelo, $marca, $placa, $tp_veiculo));
 
         exit;
     }
