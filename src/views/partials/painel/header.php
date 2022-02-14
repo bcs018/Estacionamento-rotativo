@@ -182,9 +182,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= _BASE_END_ ?>painel/novo-veiculo" class="nav-link">
+                            <a href="<?= _BASE_END_ ?>painel/nova-ocorrencia" class="nav-link">
                                 <i class="nav-icon fas fa-plus"></i>
-                                <p> Novo veiculo</p>
+                                <p> Nova ocorrência</p>
                             </a>
                         </li>
                         <li class="nav-item">
