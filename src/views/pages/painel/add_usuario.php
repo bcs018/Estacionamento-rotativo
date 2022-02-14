@@ -1,27 +1,5 @@
 <?php $render('painel/header', ['title' => 'Cadastrar Usuário']); ?>
 
-<section class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1>Cadastro de Usuário</h1>
-            </div>
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="sair" style="color:red;"><b>Sair</b></a></li>
-                </ol>
-            </div><!-- /.col -->
-
-            <div class="md-12">
-                <br>
-                <center>
-                    <p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b></p>
-                </center>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="content">
     <div class="md-11">
         <div class="card card-secondary">

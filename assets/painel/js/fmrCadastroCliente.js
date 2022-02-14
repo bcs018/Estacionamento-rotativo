@@ -43,12 +43,12 @@ $(function(){
                 if(r.retorno == true){
                     toastr.success('Cliente cadastrado com sucesso');
 
-                    $('#nome').val('');
-                    $('#email').val('');
-                    $('#telefone').val('');
-                    $('#modelo').val('');
-                    $('#marca').val('');
-                    $('#placa').val('');
+                    $('#nome_c').val('');
+                    $('#email_c').val('');
+                    $('#telefone_c').val('');
+                    $('#modelo_c').val('');
+                    $('#marca_c').val('');
+                    $('#placa_c').val('');
                 }else{
                     toastr.error(r.cod_error +' - ' + r.msg_error);
                 }

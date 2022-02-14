@@ -1,27 +1,5 @@
 <?php $render('painel/header', ['title' => 'Cadastrar Cliente']); ?>
 
-<section class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1>Cadastro de Cliente</h1>
-            </div>
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="sair" style="color:red;"><b>Sair</b></a></li>
-                </ol>
-            </div><!-- /.col -->
-
-            <div class="md-12">
-                <br>
-                <center>
-                    <p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b></p>
-                </center>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="content">
     <form id="cad_cliente" >
         <div class="md-11">
@@ -101,12 +79,12 @@
 <?php $render('painel/footer'); ?>
 
 <script>
-$('#telefone_c').mask('(00) 00000-0000');
-$('#placa_c').mask('AAA-BCBB', {
-    'translation': {
-        'A': {pattern: /[A-Za-z]/},
-        'B': {pattern: /[0-9]/},
-        'C': {pattern: /[A-Za-z0-9]/}
-    }
-});
+    $('#telefone_c').mask('(00) 00000-0000');
+    $('#placa_c').mask('AAA-BCBB', {
+        'translation': {
+            'A': {pattern: /[A-Za-z]/},
+            'B': {pattern: /[0-9]/},
+            'C': {pattern: /[A-Za-z0-9]/}
+        }
+    });
 </script>

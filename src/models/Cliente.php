@@ -22,7 +22,7 @@ class Cliente extends Model {
 
         $idCli = $this->db->lastInsertId();
 
-        $sql = 'INSERT INTO veiculos (modelo, marca, tp_veiculo) VALUES (?,?,?)';
+        $sql = 'INSERT INTO veiculos (modelo, marca, tp_veiculo, placa) VALUES (?,?,?,?)';
         $sql = $this->db->prepare($sql);
         $sql->bindValue(1, $modelo);
         $sql->bindValue(2, $marca);
@@ -37,8 +37,9 @@ class Cliente extends Model {
         $sql->bindValue(1, $idVei);
         $sql->bindValue(2, $idCli);
         $sql->execute();
-        
 
+        $error['retorno'] = true;
 
+        return $error;
     }
 }

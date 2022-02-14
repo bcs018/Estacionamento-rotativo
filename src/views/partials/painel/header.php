@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Painel de controle | <?= $title ?></title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -27,9 +29,9 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/summernote/summernote-bs4.min.css">    
+    <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/summernote/summernote-bs4.min.css">
 
-    <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/toastr/css/toastr.css">    
+    <link rel="stylesheet" href="<?= _BASE_ASS_ ?>painel/toastr/css/toastr.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -125,7 +127,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?php echo ($_SESSION['dados_usu']['img']==null)? _BASE_ASS_ ."img/semfoto.png": _BASE_ASS_.'painel/img_user/'.$_SESSION['dados_usu']['img']; ?>" class="img-circle elevation-2" alt="Imagem Usuário">
+                        <img src="<?php echo ($_SESSION['dados_usu']['img']==null)? _BASE_ASS_ ."img/semfoto.png": _BASE_ASS_.'painel/img_user/'.$_SESSION['dados_usu']['img']; ?>"
+                            class="img-circle elevation-2" alt="Imagem Usuário">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block"><?= $_SESSION['dados_usu']['nome']; ?></a>
@@ -174,20 +177,20 @@
 
                         <li class="nav-item">
                             <a href="iframe.html" class="nav-link">
-                            <i class="nav-icon fas fa-car"></i>
-                            <p> Veiculos estacionados</p>
+                                <i class="nav-icon fas fa-car"></i>
+                                <p> Veiculos estacionados</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?= _BASE_END_ ?>painel/novo-veiculo" class="nav-link">
-                            <i class="nav-icon fas fa-plus"></i>
-                            <p> Novo veiculo</p>
+                                <i class="nav-icon fas fa-plus"></i>
+                                <p> Novo veiculo</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?= _BASE_END_ ?>painel/cadastrar-usuario" class="nav-link">
-                            <i class="nav-icon fas fa-user"></i>
-                            <p> Cadastrar usuário</p>
+                                <i class="nav-icon fas fa-user"></i>
+                                <p> Cadastrar usuário</p>
                             </a>
                         </li>
                     </ul>
@@ -198,3 +201,26 @@
         </aside>
 
         <div class="content-wrapper">
+
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1><?= $title; ?></h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="<?= _BASE_END_ ?>sair" style="color:red;"><b>Sair</b></a></li>
+                            </ol>
+                        </div><!-- /.col -->
+
+                        <div class="md-12">
+                            <br>
+                            <center>
+                                <p style="color: #fc270f;"><b>Campos marcados com asterisco (*) são obrigatórios.</b>
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </section>
