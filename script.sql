@@ -51,6 +51,7 @@ create table veiculos(
     modelo varchar(100) not null,
     marca varchar(100) not null,
     tp_veiculo int not null,
+    placa varchar(8) not null,
     
 	primary key(veiculo_id)
 )default charset utf8;
