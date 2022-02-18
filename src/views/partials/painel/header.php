@@ -167,7 +167,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index2.html" class="nav-link">
+                                    <a href="<?= _BASE_END_ ?>painel/configuracoes" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Configurações</p>
                                     </a>
