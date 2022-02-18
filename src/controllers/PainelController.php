@@ -3,6 +3,7 @@ namespace src\controllers;
 
 use \core\Controller;
 use \src\models\Login;
+use \src\models\Usuario;
 
 class PainelController extends Controller {
 
@@ -38,6 +39,7 @@ class PainelController extends Controller {
 
     public function configuracoesUser(){
         $l = new Login;
+        $u = new UsuarioController;
 
         if(!$l->verificarLogado()){
             header("Location: "._BASE_END_);

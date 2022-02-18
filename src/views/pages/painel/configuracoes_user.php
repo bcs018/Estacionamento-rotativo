@@ -28,8 +28,8 @@
 
                     <div class="form-group">
                         <p style="color: #fc270f;display:inline;"><b>*</b></p>
-                        <label for="repSenha">&nbsp; Repita a Senha</label>
-                        <input type="password" class="form-control" name="repSenha" id="repSenha"
+                        <label for="repSenha_u">&nbsp; Repita a Senha</label>
+                        <input type="password" class="form-control" name="repSenha_u" id="repSenha_u"
                             placeholder="Repita a Senha">
                     </div>
 

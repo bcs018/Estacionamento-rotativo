@@ -62,4 +62,18 @@ class Usuario extends Model {
         return $error;
     }
 
+    public function getUsuario($tpUsu){
+        /**
+         * Se tpusu = 0 é usuario admin
+         * Se tpusu = 1 é usuario do sistema
+         */
+
+        if($tpUsu == 0){
+            
+        }else{
+
+        }
+
+    }
+
 }

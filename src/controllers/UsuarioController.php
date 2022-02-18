@@ -17,6 +17,19 @@ class UsuarioController extends Controller {
     }
 
     public function alterarUsuario(){
-        
+
+    }
+
+    public function getUsuario($tpUsu=0){
+        /**
+         * Se tpusu = 0 é usuario admin
+         * Se tpusu = 1 é usuario do sistema
+         */
+
+        $u = new Usuario;
+        echo json_encode($u->getUsuario());
+
+        exit;
+
     }
 }
