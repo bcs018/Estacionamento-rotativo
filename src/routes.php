@@ -13,6 +13,7 @@ $router->post('/painel/cadastrar-action', 'UsuarioController@cadastrarUsuario');
 $router->post('/painel/nova-ocorrencia', 'OcorrenciaController@novaOcorrencia');
 $router->get('/painel/cadastrar-cliente', 'ClienteController@addCliente');
 $router->get('/painel/configuracoes', 'PainelController@configuracoes');
+$router->get('/painel/configuracoes-usuario', 'PainelController@configuracoesUser');
 $router->post('/painel/cadastrar-cliente-action', 'ClienteController@addClienteAction');
 
 

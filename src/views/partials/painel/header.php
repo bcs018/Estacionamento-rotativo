@@ -131,7 +131,7 @@
                             class="img-circle elevation-2" alt="Imagem Usuário">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block"><?= $_SESSION['dados_usu']['nome']; ?></a>
+                        <a href="<?= _BASE_END_ ?>painel/configuracoes-usuario" class="d-block"><?= $_SESSION['dados_usu']['nome']; ?></a>
                     </div>
                 </div>
 

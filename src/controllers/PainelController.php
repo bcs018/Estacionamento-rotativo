@@ -34,6 +34,16 @@ class PainelController extends Controller {
         }
 
         $this->render('painel/configuracoes');
+    }
+
+    public function configuracoesUser(){
+        $l = new Login;
+
+        if(!$l->verificarLogado()){
+            header("Location: "._BASE_END_);
+        }
+
+        $this->render('painel/configuracoes_user');
 
     }
 

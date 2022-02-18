@@ -15,4 +15,8 @@ class UsuarioController extends Controller {
 
         exit;
     }
+
+    public function alterarUsuario(){
+        
+    }
 }
